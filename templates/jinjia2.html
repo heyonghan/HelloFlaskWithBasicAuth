@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jinjia2 Demo</title>
+</head>
+<body>
+    <ul>
+        {%  for item in navigation %}
+            <li><a  href="{{ item}}">网址:{{ item }}</a> </li>
+        {%  endfor %}
+    </ul>
+<h1>
+    hello world
+</h1>
+{{ a_variable }}<br>
+
+{{ b_variable }}<br>
+that is so good
+{# 我是注释 #}
+</body>
+</html>
+
+<!--
+{# {{...}}:用于输出变量或者表达式，本例子中为item,a_variable等#}
+
+{#{{%%}}：用于逻辑控制，本例子中for循环所用到的#}
+
+{#...#}：用于注释，再渲染后的html中不会出现。
+
+https://www.cnblogs.com/liuruitao/p/7787407.html
+-->
